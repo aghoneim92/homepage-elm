@@ -1,6 +1,69 @@
 module Home exposing (homepage)
 
-import Css exposing (BackgroundImage, Color, Style, absolute, alignItems, alignSelf, auto, backgroundColor, backgroundImage, border, border3, borderColor, bottom, center, color, column, cursor, display, displayFlex, flex, flexDirection, flexEnd, flexGrow, height, hover, int, justifyContent, left, marginBottom, marginLeft, marginTop, minWidth, none, overflow, padding, padding2, pct, pointer, position, property, px, relative, rgb, rgba, right, solid, space, spaceBetween, sticky, textAlign, textDecoration, top, transform, translate, translate2, underline, url, visible, width, zIndex)
+import Css
+    exposing
+        ( BackgroundImage
+        , Color
+        , Style
+        , absolute
+        , alignItems
+        , alignSelf
+        , auto
+        , backgroundColor
+        , backgroundImage
+        , border
+        , border3
+        , borderColor
+        , bottom
+        , center
+        , color
+        , column
+        , cursor
+        , display
+        , displayFlex
+        , flex
+        , flexDirection
+        , flexEnd
+        , flexGrow
+        , height
+        , hover
+        , int
+        , justifyContent
+        , left
+        , marginBottom
+        , marginLeft
+        , marginTop
+        , minWidth
+        , none
+        , overflow
+        , padding
+        , padding2
+        , pct
+        , pointer
+        , position
+        , property
+        , px
+        , relative
+        , rgb
+        , rgba
+        , right
+        , solid
+        , space
+        , spaceBetween
+        , sticky
+        , textAlign
+        , textDecoration
+        , top
+        , transform
+        , translate
+        , translate2
+        , underline
+        , url
+        , visible
+        , width
+        , zIndex
+        )
+import Css.Colors exposing (black, gray)
 import Html.Styled
     exposing
         ( Html
@@ -54,10 +117,12 @@ homepageOffset =
 btnLink : List Style
 btnLink =
     [ padding (px 10)
-    , border3 (px 1) solid (rgb 128 128 128)
+    , border3 (px 1) solid gray
     , property "user-select" "none"
     , cursor pointer
+    , color black
     , hover [ borderColor ghoneimRed, color ghoneimRed ]
+    , textDecoration none
     ]
 
 
@@ -82,24 +147,34 @@ homepage =
             [ css [ marginTop (px 5) ] ]
             [ text "Software Engineer" ]
         , section
-            [ title "Resume"
-            , css
-                [ displayFlex
-                , alignItems center
-                , justifyContent spaceBetween
-                , minWidth (px 250)
-                , padding (px 10)
-                , flex (int 1)
-                , marginBottom (px 50)
+            []
+            [ div
+                [ css
+                    [ displayFlex
+                    , alignItems center
+                    , justifyContent spaceBetween
+                    , minWidth (px 250)
+                    , padding (px 10)
+                    , marginBottom (px 50)
+                    ]
                 ]
-            ]
-            [ a
-                [ css btnLink
-                , onClick ViewResume
-                , title "View Resume in Browser"
+                [ a
+                    [ css btnLink
+                    , onClick ViewResume
+                    , title "View Resume in Browser"
+                    ]
+                    [ text "View Resume" ]
+                , a [ css btnLink, title "" ] [ text "Download PDF" ]
                 ]
-                [ text "View Resume" ]
-            , a [ css btnLink, title "" ] [ text "Download PDF" ]
+            , div
+                []
+                [ a
+                    [ css btnLink
+                    , href "https://github.com/aghoneim92/homepage"
+                    , target "_blank"
+                    ]
+                    [ text "View Source on Github" ]
+                ]
             ]
         , footer
             [ css

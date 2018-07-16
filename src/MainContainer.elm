@@ -1,60 +1,6 @@
 module MainContainer exposing (mainContainer)
 
-import Css
-    exposing
-        ( BackgroundImage
-        , Color
-        , Style
-        , absolute
-        , alignItems
-        , alignSelf
-        , auto
-        , backgroundColor
-        , backgroundImage
-        , border
-        , border3
-        , borderColor
-        , bottom
-        , center
-        , color
-        , column
-        , display
-        , displayFlex
-        , flex
-        , flexDirection
-        , flexEnd
-        , flexGrow
-        , height
-        , int
-        , justifyContent
-        , left
-        , marginBottom
-        , marginLeft
-        , marginTop
-        , minWidth
-        , overflow
-        , padding
-        , pct
-        , position
-        , property
-        , px
-        , relative
-        , rgb
-        , rgba
-        , right
-        , solid
-        , space
-        , spaceBetween
-        , sticky
-        , textAlign
-        , top
-        , transform
-        , translate
-        , translate2
-        , url
-        , visible
-        , width
-        )
+import Css exposing (BackgroundImage, Color, Style, absolute, alignItems, alignSelf, auto, backgroundColor, backgroundImage, border, border3, borderColor, bottom, center, color, column, display, displayFlex, fitContent, flex, flexDirection, flexEnd, flexGrow, height, int, justifyContent, left, marginBottom, marginLeft, marginTop, minWidth, overflow, padding, pct, position, property, px, relative, rgb, rgba, right, solid, space, spaceBetween, sticky, textAlign, top, transform, translate, translate2, url, visible, width)
 import Home exposing (homepage)
 import Html.Styled
     exposing
@@ -141,7 +87,8 @@ mainContainer model =
                         , overflow visible
                         ]
                     ]
-                    [ photo ]
+                    [ div [] [ photo ]
+                    ]
               , nav [] []
               , homepage
               ]

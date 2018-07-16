@@ -23,14 +23,11 @@ photoOffset =
 
 photo : Html Msg
 photo =
-    div
-        []
-        [ img
-            [ src "img/graduation.jpg"
-            , css
-                [ height (px (toFloat photoHeight))
-                , marginTop (px (toFloat photoMarginTop))
-                ]
+    img
+        [ src "img/graduation.jpg"
+        , css
+            [ height (px (toFloat photoHeight))
+            , marginTop (px (toFloat photoMarginTop))
             ]
-            []
         ]
+        []

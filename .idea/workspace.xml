@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9d7c9e3-ea63-45ec-b23c-4a055bc97d98" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ghoneim.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/resume.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add_scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elm-package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/graduation.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Home/Home.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainContainer.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Msg.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Photo.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Port.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resume.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theme.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/resume.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/Home.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Home.elm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainContainer.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainContainer.elm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Photo.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Photo.elm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,29 +29,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.elm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.elm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainContainer.elm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainContainer.elm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="145" column="20" lean-forward="true" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
+            <state relative-caret-position="1380">
+              <caret line="92" column="20" lean-forward="true" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.elm" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Photo.elm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Photo.elm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.elm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Home/Home.elm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+            <state relative-caret-position="77">
+              <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -93,7 +59,7 @@
       <file leaf-file-name="Resume.elm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resume.elm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="-7250">
               <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
             </state>
           </provider>
@@ -131,7 +97,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -139,15 +105,6 @@
                 <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -191,9 +148,9 @@
       <find>withmedia</find>
       <find>only print</find>
       <find>showpdf</find>
-      <find>footer</find>
-      <find>withmedia</find>
       <find>paddingtop</find>
+      <find>withmedia</find>
+      <find>footer</find>
     </findStrings>
     <replaceStrings>
       <replace>cell</replace>
@@ -217,7 +174,6 @@
         <option value="$PROJECT_DIR$/.editorconfig" />
         <option value="$PROJECT_DIR$/src/DRAFT.MD" />
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/src/Photo.elm" />
         <option value="$PROJECT_DIR$/elm-package.json" />
         <option value="$PROJECT_DIR$/src/Colors.elm" />
         <option value="$PROJECT_DIR$/img/github.svg" />
@@ -228,17 +184,18 @@
         <option value="$PROJECT_DIR$/src/Model.elm" />
         <option value="$PROJECT_DIR$/src/Msg.elm" />
         <option value="$PROJECT_DIR$/src/Theme.elm" />
-        <option value="$PROJECT_DIR$/src/MainContainer.elm" />
         <option value="$PROJECT_DIR$/src/Data.elm" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/elm-stuff/packages/rtfeldman/elm-css/14.0.0/src/Css/Media.elm" />
         <option value="$PROJECT_DIR$/src/Resume.elm" />
         <option value="$PROJECT_DIR$/src/Main.elm" />
-        <option value="$PROJECT_DIR$/src/Home/Home.elm" />
         <option value="$PROJECT_DIR$/add_scripts.js" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Photo.elm" />
+        <option value="$PROJECT_DIR$/src/MainContainer.elm" />
+        <option value="$PROJECT_DIR$/src/Home/Home.elm" />
       </list>
     </option>
   </component>
@@ -260,7 +217,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="410" />
     <option name="y" value="126" />
     <option name="width" value="1440" />
@@ -281,96 +238,6 @@
             <path>
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
               <item name="resume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-lang" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-lang" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="5.1.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-lang" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="5.1.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="rtfeldman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="rtfeldman" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="rtfeldman" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-css" type="462c0819:PsiDirectoryNode" />
-              <item name="14.0.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="rtfeldman" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-css" type="462c0819:PsiDirectoryNode" />
-              <item name="14.0.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-stuff" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="rtfeldman" type="462c0819:PsiDirectoryNode" />
-              <item name="elm-css" type="462c0819:PsiDirectoryNode" />
-              <item name="14.0.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
@@ -545,15 +412,15 @@
       <workItem from="1531073618330" duration="5917000" />
       <workItem from="1531136918204" duration="5698000" />
       <workItem from="1531264709971" duration="31346000" />
-      <workItem from="1531576338710" duration="21716000" />
+      <workItem from="1531576338710" duration="24596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104568000" />
+    <option name="totallyTimeSpent" value="107448000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="410" y="126" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -587,13 +454,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elm-stuff/packages/elm-lang/core/5.1.1/src/Platform.elm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1104">
@@ -690,13 +550,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/img/x.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Photo.elm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Port.elm">
       <provider selected="true" editor-type-id="text-editor">
@@ -818,24 +671,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainContainer.elm">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="145" column="20" lean-forward="true" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Home.elm">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+        <state relative-caret-position="30">
+          <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resume.elm">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -853,37 +719,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
+    <entry file="file://$PROJECT_DIR$/src/Resume.elm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-7250">
+          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_scripts.js">
+    <entry file="file://$PROJECT_DIR$/src/Photo.elm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="421">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/MainContainer.elm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+        <state relative-caret-position="1380">
+          <caret line="92" column="20" lean-forward="true" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/Home.elm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
         </state>
       </provider>
     </entry>
