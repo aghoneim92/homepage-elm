@@ -2,7 +2,7 @@
 
 const {readFileSync, writeFileSync} = require('fs')
 
-const contents = readFileSync('./index.html')
+const contents = readFileSync('./public/index.html')
   .toString()
   .replace(
     '<script type="text/javascript">Elm.Main.fullscreen()</script>',
@@ -14,4 +14,4 @@ const contents = readFileSync('./index.html')
     "<title>Ahmed Ghoneim's Personal Homepage</title>"
   )
 
-writeFileSync('index.html', contents)
+writeFileSync('public/index.html', contents)

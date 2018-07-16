@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "elm-live src/Main.elm --open --after-build='./add_scripts.js'"
+    "start": "elm-live src/Main.elm --open --dir=public --output=public/index.html --after-build='./add_scripts.js'",
+    "build": "elm-make src/Main.elm --output public/index.html && ./add_scripts.js"
   },
   "devDependencies": {
     "elm": "^0.18.0",
