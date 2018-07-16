@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "elm-live src/Main.elm --open --after-build='./add_scripts.js'"
+  },
+  "devDependencies": {
+    "elm": "^0.18.0",
+    "elm-live": "^2.7.5"
+  },
+  "dependencies": {
+    "pdf.js": "^0.1.0"
+  }
+}
