@@ -1,4 +1,4 @@
-module Data exposing (Job, jobs)
+module Data.Job exposing (Job, jobs)
 
 
 type alias Job =

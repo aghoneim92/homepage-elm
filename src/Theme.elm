@@ -1,4 +1,4 @@
-module Theme exposing (..)
+module Theme exposing (ghoneimRed)
 
 import Css exposing (Color, rgb)
 

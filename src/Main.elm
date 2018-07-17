@@ -1,11 +1,11 @@
 module Main exposing (main)
 
+import Data.Model exposing (Model, model)
+import Data.Msg exposing (Msg(KeyPressed, None, SetNow, TransitMsg, ViewResume))
 import Date
 import Html.Styled exposing (Attribute, div, h1, img, program)
 import MainContainer exposing (mainContainer)
-import Model exposing (Model)
-import Msg exposing (Msg(KeyPressed, None, SetNow, TransitMsg, ViewResume))
-import Port exposing (keyPressed)
+import Ports exposing (keyPressed)
 import Task exposing (perform)
 import Transit exposing (WithTransition, empty)
 
@@ -35,15 +35,6 @@ update msg model =
 subscriptions : Model -> Sub Msg
 subscriptions model =
     Sub.batch [ Transit.subscriptions TransitMsg model, keyPressed KeyPressed ]
-
-
-model : Model
-model =
-    { showPdf = False
-    , seePreviousJobs = False
-    , transition = empty
-    , now = Nothing
-    }
 
 
 main : Program Never Model Msg

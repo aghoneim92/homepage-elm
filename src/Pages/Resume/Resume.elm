@@ -1,10 +1,73 @@
-module Resume exposing (resume)
+module Pages.Resume.Resume exposing (resume)
 
-import Css exposing (Style, absolute, alignItems, auto, backgroundColor, block, border3, borderBottom, borderBottom3, borderRadius, center, column, display, displayFlex, flex, flex2, flex3, flexDirection, flexGrow, flexStart, float, fontWeight, height, int, justifyContent, left, margin, margin2, marginBottom, marginLeft, marginRight, marginTop, maxWidth, minHeight, minWidth, none, normal, num, padding, padding2, paddingBottom, paddingTop, pct, position, px, rgb, rgba, right, row, rowReverse, solid, spaceBetween, textAlign, top, transparent, underline, vh, width, zIndex)
+import Css
+    exposing
+        ( Style
+        , absolute
+        , alignItems
+        , auto
+        , backgroundColor
+        , block
+        , border3
+        , borderBottom
+        , borderBottom3
+        , borderRadius
+        , center
+        , column
+        , display
+        , displayFlex
+        , flex
+        , flex2
+        , flex3
+        , flexDirection
+        , flexGrow
+        , flexStart
+        , float
+        , fontWeight
+        , height
+        , int
+        , justifyContent
+        , left
+        , margin
+        , margin2
+        , marginBottom
+        , marginLeft
+        , marginRight
+        , marginTop
+        , maxWidth
+        , minHeight
+        , minWidth
+        , none
+        , normal
+        , num
+        , padding
+        , padding2
+        , paddingBottom
+        , paddingTop
+        , pct
+        , position
+        , px
+        , rgb
+        , rgba
+        , right
+        , row
+        , rowReverse
+        , solid
+        , spaceBetween
+        , textAlign
+        , top
+        , transparent
+        , underline
+        , vh
+        , width
+        , zIndex
+        )
 import Css.Colors exposing (gray)
 import Css.Foreign exposing (global, media)
 import Css.Media as Media exposing (all, only, print, withMedia)
-import Data exposing (Job, jobs)
+import Data.Job exposing (Job, jobs)
+import Data.Model exposing (Model)
+import Data.Msg exposing (Msg)
 import Date
     exposing
         ( Date
@@ -43,11 +106,10 @@ import Html.Styled
         )
 import Html.Styled.Attributes exposing (css, datetime, href, id, style, title)
 import List exposing (concat, filter, head, indexedMap, map)
-import Model exposing (Model)
-import Msg exposing (Msg)
 import Theme exposing (ghoneimRed)
 import Transit exposing (Transition)
 import TransitStyle exposing (fade)
+import Util.Media exposing (large, medium, small)
 
 
 resume : Model -> Html Msg
@@ -91,8 +153,9 @@ resume model =
         , main_
             [ css
                 [ maxWidth (pct 100)
-                , withMedia mediumPlus [ minWidth (px 500) ]
-                , withMedia large [ maxWidth (px 800) ]
+                , withMedia [ small ] [ width (pct 100) ]
+                , withMedia [ medium ] [ width (px 500) ]
+                , withMedia [ large ] [ maxWidth (px 800) ]
                 ]
             ]
             [ basicInfo, workHistory model, professionalExperience, contact ]
@@ -190,14 +253,6 @@ dateToString y m d =
     y ++ "-" ++ m ++ "-" ++ d
 
 
-large =
-    [ all [ Media.minWidth (px 1000) ] ]
-
-
-mediumPlus =
-    [ all [ Media.minWidth (px 500) ] ]
-
-
 monthNumbers =
     [ ( Jan, 0 )
     , ( Feb, 1 )
@@ -229,11 +284,6 @@ monthNumber date =
 
         Nothing ->
             0
-
-
-(@) : List a -> List a -> List a
-(@) x y =
-    concat [ x, y ]
 
 
 yearDifference : Maybe Date -> String -> String -> Float
@@ -338,7 +388,6 @@ job now { company, position, from, to, technologies } =
                 , border3 (px 1) solid gray
                 , borderRadius (px 5)
                 , margin (px 10)
-                , withMedia mediumPlus [ marginLeft (px 10) ]
                 ]
             ]
             [ h3 [ css [ marginBottom (px 1) ] ] [ text company ]

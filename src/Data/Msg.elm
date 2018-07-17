@@ -1,4 +1,4 @@
-module Msg exposing (Msg(..))
+module Data.Msg exposing (Msg(..))
 
 import Date exposing (Date)
 import Transit

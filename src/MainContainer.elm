@@ -1,65 +1,29 @@
 module MainContainer exposing (mainContainer)
 
-import Css exposing (BackgroundImage, Color, Style, absolute, alignItems, alignSelf, auto, backgroundColor, backgroundImage, border, border3, borderColor, bottom, center, color, column, display, displayFlex, fitContent, flex, flexDirection, flexEnd, flexGrow, height, int, justifyContent, left, marginBottom, marginLeft, marginTop, minWidth, overflow, padding, pct, position, property, px, relative, rgb, rgba, right, solid, space, spaceBetween, sticky, textAlign, top, transform, translate, translate2, url, visible, width)
-import Home exposing (homepage)
-import Html.Styled
-    exposing
-        ( Html
-        , a
-        , aside
-        , br
-        , canvas
-        , div
-        , footer
-        , h1
-        , h2
-        , h3
-        , header
-        , img
-        , li
-        , main_
-        , nav
-        , section
-        , span
-        , styled
-        , table
-        , tbody
-        , td
-        , text
-        , toUnstyled
-        , tr
-        , ul
-        )
+import Css exposing (boxSizing, column, contentBox, displayFlex, flexDirection, height, pct)
+import Css.Foreign exposing (body, everything, global, html)
+import Data.Model exposing (Model)
+import Data.Msg exposing (Msg(ViewResume))
+import Html.Styled exposing (Html, div)
 import Html.Styled.Attributes exposing (class, css, href, id, src, style)
 import Html.Styled.Events exposing (onClick)
 import List exposing (concat)
-import Model exposing (Model)
-import Msg exposing (Msg(ViewResume))
-import Photo exposing (photo, photoOffset)
-import Resume exposing (resume)
+import Pages.Home.Home exposing (homepage)
+import Pages.Resume.Resume exposing (resume)
 import Svg.Styled exposing (node)
 import Theme exposing (ghoneimRed)
 import Transit exposing (Transition)
 import TransitStyle exposing (fade)
+import Util.Operators exposing ((@))
 
 
-welcomeContainer : Html Msg
-welcomeContainer =
-    div
-        [ css
-            [ backgroundColor ghoneimRed
-            , displayFlex
-            , justifyContent center
-            , width (pct 100)
-            , height (pct 100)
-            ]
+globalStyles : Html Msg
+globalStyles =
+    global
+        [ html [ height (pct 100) ]
+        , body [ height (pct 100) ]
+        , everything [ boxSizing contentBox ]
         ]
-        [ photo ]
-
-
-headerHeight : Int
-headerHeight =
-    200
 
 
 mainContainer : Model -> Html Msg
@@ -73,24 +37,15 @@ mainContainer model =
                 [ resume model ]
             else
                 []
+
+        children =
+            [ globalStyles, homepage ] @ overlay
     in
     div
-        [ css [ height (pct 100), displayFlex, flexDirection column ] ]
-        (concat
-            [ overlay
-            , [ header
-                    [ css
-                        [ backgroundColor ghoneimRed
-                        , height (px (toFloat headerHeight))
-                        , displayFlex
-                        , justifyContent center
-                        , overflow visible
-                        ]
-                    ]
-                    [ div [] [ photo ]
-                    ]
-              , nav [] []
-              , homepage
-              ]
+        [ css
+            [ height (pct 100)
+            , displayFlex
+            , flexDirection column
             ]
-        )
+        ]
+        children
