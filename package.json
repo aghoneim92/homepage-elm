@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "start": "elm-live src/Main.elm --open --dir=public --output=public/index.html --after-build='./add_scripts.js'",
-    "build": "elm-make src/Main.elm --output public/index.html && ./add_scripts.js"
+    "start": "elm-live src/Main.elm --open --dir=public --output=public/index.html --pushstate --after-build='./add_scripts.js'",
+    "build": "elm-make src/Main.elm --output public/index.html && ./add_scripts.js",
+    "deploy": "yarn build && firebase deploy"
   },
   "devDependencies": {
     "elm": "^0.18.0",
-    "elm-live": "^2.7.5"
+    "elm-live": "^2.7.5",
+    "firebase-tools": "^3.19.3"
   },
   "dependencies": {
     "pdf.js": "^0.1.0"
