@@ -143,6 +143,7 @@ homepage =
                 , backgroundColor ghoneimRed
                 , color (rgb 255 255 255)
                 , width (pct 100)
+                , height (em 3.0)
                 , displayFlex
                 , alignItems center
                 , justifyContent center

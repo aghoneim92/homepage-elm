@@ -1,12 +1,12 @@
 module Data.Msg exposing (Msg(..))
 
 import Date exposing (Date)
-import Transit
+import Navigation exposing (Location)
 
 
 type Msg
     = ViewResume
-    | TransitMsg (Transit.Msg Msg)
     | KeyPressed String
     | SetNow Date
+    | LocationChange Location
     | None

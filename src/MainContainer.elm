@@ -4,7 +4,8 @@ import Css exposing (boxSizing, column, contentBox, displayFlex, flexDirection, 
 import Css.Foreign exposing (body, everything, global, html)
 import Data.Model exposing (Model)
 import Data.Msg exposing (Msg(ViewResume))
-import Html.Styled exposing (Html, div)
+import Html
+import Html.Styled exposing (Html, div, toUnstyled)
 import Html.Styled.Attributes exposing (class, css, href, id, src, style)
 import Html.Styled.Events exposing (onClick)
 import List exposing (concat)
@@ -26,26 +27,24 @@ globalStyles =
         ]
 
 
-mainContainer : Model -> Html Msg
-mainContainer model =
+mainContainer : Model -> Html.Html Msg
+mainContainer { location, now } =
     let
-        { showPdf, transition } =
-            model
+        page =
+            case location of
+                "/resume" ->
+                    resume now
 
-        overlay =
-            if showPdf then
-                [ resume model ]
-            else
-                []
-
-        children =
-            [ globalStyles, homepage ] @ overlay
+                _ ->
+                    homepage
     in
-    div
-        [ css
-            [ height (pct 100)
-            , displayFlex
-            , flexDirection column
+    toUnstyled
+        (div
+            [ css
+                [ height (pct 100)
+                , displayFlex
+                , flexDirection column
+                ]
             ]
-        ]
-        children
+            [ globalStyles, page ]
+        )

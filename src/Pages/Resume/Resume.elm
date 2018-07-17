@@ -112,25 +112,17 @@ import TransitStyle exposing (fade)
 import Util.Media exposing (large, medium, small)
 
 
-resume : Model -> Html Msg
-resume model =
+resume : Maybe Date -> Html Msg
+resume now =
     div
         [ css
-            [ position absolute
-            , backgroundColor (rgb 255 255 255)
-            , zIndex (int 1)
-            , top (px 0)
-            , left (px 0)
-            , right (px 0)
-            , padding (px 20)
-            , paddingTop (px 0)
+            [ backgroundColor (rgb 255 255 255)
             , minHeight (pct 100)
             , displayFlex
             , flexDirection column
             , alignItems center
             , justifyContent flexStart
             ]
-        , style (fade model.transition)
         ]
         [ header
             []
@@ -158,7 +150,7 @@ resume model =
                 , withMedia [ large ] [ maxWidth (px 800) ]
                 ]
             ]
-            [ basicInfo, workHistory model, professionalExperience, contact ]
+            [ basicInfo, workHistory now, professionalExperience, contact ]
         ]
 
 
@@ -546,8 +538,8 @@ jobsSection =
     section [ css [ displayFlex, flexDirection column, height (pct 100) ] ]
 
 
-workHistory : Model -> Html Msg
-workHistory { seePreviousJobs, now } =
+workHistory : Maybe Date -> Html Msg
+workHistory now =
     let
         createJob =
             job now
