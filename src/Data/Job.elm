@@ -15,7 +15,7 @@ jobs =
     [ { company = "FRIDAY Car Insurance"
       , position = "Software Engineer"
       , from = "December 2017"
-      , to = "Present"
+      , to = "October 2018"
       , technologies =
             [ "Spring Boot 2"
             , "Kotlin"
