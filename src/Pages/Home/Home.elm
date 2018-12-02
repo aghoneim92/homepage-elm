@@ -51,6 +51,138 @@ headerHeight =
     7.0
 
 
+foot : Html Msg
+foot =
+    footer
+        [ css
+            [ marginTop auto
+            , padding2 (px 10) (px 0)
+            , backgroundColor ghoneimRed
+            , color (rgb 255 255 255)
+            , width (pct 100)
+            , height (em 3.0)
+            , displayFlex
+            , alignItems center
+            , justifyContent center
+            ]
+        ]
+        [ img
+            [ src "img/github.svg"
+            , css [ width (px 32), height (px 32) ]
+            ]
+            []
+        , a
+            [ class "github-button"
+            , href "https://github.com/aghoneim92"
+            , target "_blank"
+            , title "Github Profile"
+            , css
+                [ marginLeft (px 10)
+                , color (rgb 255 255 255)
+                , textDecoration none
+                ]
+            ]
+            [ text "@aghoneim92" ]
+        ]
+
+
+head : Html Msg
+head =
+    header
+        [ css
+            [ backgroundColor ghoneimRed
+            , height (em headerHeight)
+            , displayFlex
+            , justifyContent center
+            , overflow visible
+            , width (pct 100)
+            ]
+        ]
+        []
+
+
+myName : Html Msg
+myName =
+    h1
+        [ css
+            [ textAlign center
+            , marginBottom (px 0)
+            ]
+        ]
+        [ text "Ahmed Ghoneim"
+        ]
+
+
+occupation : Html Msg
+occupation =
+    h3
+        [ css [ marginTop (px 5) ] ]
+        [ text "Software Engineer" ]
+
+
+viewResume : Html Msg
+viewResume =
+    section
+        [ css [ flex (int 1) ] ]
+        [ section
+            [ css
+                [ displayFlex
+                , alignItems center
+                , justifyContent spaceBetween
+                , maxWidth (em (250.0 / 15.0))
+                , padding (px 10)
+                , marginBottom (px 50)
+                ]
+            ]
+            [ a
+                [ css btnLink
+                , onClick ViewResume
+                , title "View Resume in Browser"
+                ]
+                [ text "View Resume" ]
+            , a
+                [ css btnLink, title "", href "resume.pdf" ]
+                [ text "Download PDF" ]
+            ]
+        , section
+            []
+            [ a
+                [ css btnLink
+                , href "https://github.com/aghoneim92/homepage"
+                , target "_blank"
+                ]
+                [ text "View Source on Github" ]
+            ]
+        ]
+
+
+body : Html Msg
+body =
+    div
+        [ css
+            [ displayFlex
+            , width (pct 100)
+            , flex (int 1)
+            , flexDirection column
+            , alignItems center
+            , transform (translateY (em -4))
+            ]
+        ]
+        [ photo
+        , div
+            [ css
+                [ flexDirection column
+                , flex (int 1)
+                , marginTop (em 1.0)
+                ]
+            ]
+            [ myName
+            , occupation
+            , viewResume
+            ]
+        ]
+
+
 homepage : Html Msg
 homepage =
     main_
@@ -63,108 +195,7 @@ homepage =
             , textAlign center
             ]
         ]
-        [ header
-            [ css
-                [ backgroundColor ghoneimRed
-                , height (em headerHeight)
-                , displayFlex
-                , justifyContent center
-                , overflow visible
-                , width (pct 100)
-                ]
-            ]
-            []
-        , nav [] []
-        , div
-            [ css
-                [ displayFlex
-                , width (pct 100)
-                , flex (int 1)
-                , flexDirection column
-                , alignItems center
-                , transform (translateY (em -4))
-                ]
-            ]
-            [ photo
-            , div
-                [ css
-                    [ flexDirection column
-                    , flex (int 1)
-                    , marginTop (em 1.0)
-                    ]
-                ]
-                [ h1
-                    [ css
-                        [ textAlign center
-                        , marginBottom (px 0)
-                        ]
-                    ]
-                    [ text "Ahmed Ghoneim"
-                    ]
-                , h3
-                    [ css [ marginTop (px 5) ] ]
-                    [ text "Software Engineer" ]
-                , section
-                    [ css [ flex (int 1) ] ]
-                    [ section
-                        [ css
-                            [ displayFlex
-                            , alignItems center
-                            , justifyContent spaceBetween
-                            , maxWidth (em (250.0 / 15.0))
-                            , padding (px 10)
-                            , marginBottom (px 50)
-                            ]
-                        ]
-                        [ a
-                            [ css btnLink
-                            , onClick ViewResume
-                            , title "View Resume in Browser"
-                            ]
-                            [ text "View Resume" ]
-                        , a [ css btnLink, title "" ] [ text "Download PDF" ]
-                        ]
-                    , section
-                        []
-                        [ a
-                            [ css btnLink
-                            , href "https://github.com/aghoneim92/homepage"
-                            , target "_blank"
-                            ]
-                            [ text "View Source on Github" ]
-                        ]
-                    ]
-                ]
-            ]
-        , footer
-            [ css
-                [ marginTop auto
-                , padding2 (px 10) (px 0)
-                , backgroundColor ghoneimRed
-                , color (rgb 255 255 255)
-                , width (pct 100)
-                , height (em 3.0)
-                , displayFlex
-                , alignItems center
-                , justifyContent center
-                ]
-            ]
-            [ img
-                [ src "img/github.svg"
-                , css [ width (px 32), height (px 32) ]
-                ]
-                []
-            , a
-                [ class "github-button"
-                , href "https://github.com/aghoneim92"
-                , target "_blank"
-                , title "Github Profile"
-                , css
-                    [ marginLeft (px 10)
-                    , color (rgb 255 255 255)
-                    , textDecoration none
-                    ]
-                ]
-                [ text "@aghoneim92" ]
-            ]
+        [ head
+        , body
+        , foot
         ]
