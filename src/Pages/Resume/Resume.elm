@@ -146,7 +146,8 @@ resume now =
             [ css
                 [ maxWidth (pct 100)
                 , withMedia [ small ] [ width (pct 100) ]
-                , withMedia [ medium ] [ width (px 500) ]
+
+                -- , withMedia [ medium ] [ width (px 500) ]
                 , withMedia [ large ] [ maxWidth (px 800) ]
                 ]
             ]
@@ -331,8 +332,10 @@ yearDifference now from to =
         scaledDifference =
             if actualDifference < 1.0 then
                 actualDifference * 2.0
+
             else if actualDifference >= 2.0 then
                 actualDifference / 2
+
             else
                 actualDifference
     in
@@ -439,6 +442,7 @@ jobTimes now { from, to } =
         [ figcaption []
             [ if to == "Present" then
                 text to
+
               else
                 time
                     [ datetime to ]
@@ -493,6 +497,7 @@ branch :
 branch compA compB predicate ( index, model ) =
     if predicate ( index, model ) then
         compA model
+
     else
         compB model
 
@@ -521,6 +526,7 @@ evenJobTimes : Maybe Date -> IndexPair Job -> Html Msg
 evenJobTimes now ( index, job ) =
     if isEven index then
         jobTimes now job
+
     else
         timeSpacerDiv now job
 
@@ -529,6 +535,7 @@ oddJobTimes : Maybe Date -> IndexPair Job -> Html Msg
 oddJobTimes now ( index, job ) =
     if isOdd index then
         jobTimes now job
+
     else
         timeSpacerDiv now job
 
@@ -617,8 +624,8 @@ contact =
                     , td
                         []
                         [ a
-                            [ href "mailto:ahmed@ghoneim.de" ]
-                            [ text "ahmed@ghoneim.de" ]
+                            [ href "mailto:ahmedghoneim92@gmail.com" ]
+                            [ text "ahmedghoneim92@gmail.com" ]
                         ]
                     ]
                 , tr
@@ -627,8 +634,8 @@ contact =
                     , td
                         []
                         [ a
-                            [ href "tel:+491728495273" ]
-                            [ text "+49 172 849 5273" ]
+                            [ href "tel:+201277766643" ]
+                            [ text "+20 12 777 666 43" ]
                         ]
                     ]
                 , tr
@@ -638,11 +645,11 @@ contact =
                         []
                         [ address
                             []
-                            [ text "Fischerinsel 13"
+                            [ text "96 El Tayar Ahmed Soud"
                             , br [] []
-                            , text "10179 Berlin"
+                            , text "Bolkly"
                             , br [] []
-                            , text "Germany"
+                            , text "Alexandria"
                             ]
                         ]
                     ]

@@ -2,3 +2,6 @@ elm-stuff
 elm.js
 node_modules
 index.html
+
+.DS_Store
+.firebase
