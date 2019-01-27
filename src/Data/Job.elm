@@ -23,29 +23,14 @@ jobs =
             , "Typescript"
             ]
       }
-    , { company = "SIXT Autovermietung"
-      , position = "Frontend Developer"
-      , from = "September 2017"
-      , to = "November 2017"
-      , technologies = [ "React" ]
-      }
     , { company = "pruefungspaten.de"
       , position = "Fullstack Developer"
-      , from = "March 2017"
-      , to = "August 2017"
+      , from = "February 2017"
+      , to = "October 2017"
       , technologies =
             [ "PHP 7"
             , "mySQL"
             , "jQuery + Vanilla JS"
-            ]
-      }
-    , { company = "Zalando SE"
-      , position = "Software Engineer"
-      , from = "September 2016"
-      , to = "February 2017"
-      , technologies =
-            [ "React"
-            , "AWS"
             ]
       }
     , { company = "Eventum IT Solutions"
